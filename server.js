@@ -41,6 +41,10 @@ MongoClient.connect(uri, (err, database) => {
 app.get('/', (req, res) => {
   res.sendFile(__dirname + '/index.html');
 });
+//new route
+app.get('/hola',(req, res)=>{
+  res.send('Estas en la direccion');
+});
 
 // add a document to the DB collection recording the click event
 app.post('/clicked', (req, res) => {
