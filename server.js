@@ -43,7 +43,7 @@ app.get('/', (req, res) => {
 });
 //new route
 app.get('/hola',(req, res)=>{
-  res.send('Estas en la direccion');
+  res.send('Estas en la direccion /hola');
 });
 
 // add a document to the DB collection recording the click event
